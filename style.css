@@ -1,0 +1,140 @@
+body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      body {
+        background-color: #fff;
+        color: #333;
+      }
+
+      .header-top {
+        background-color: #d61120;
+        color: white;
+        padding: 5px 20px;
+        text-align: right;
+        font-size: 14px;
+      }
+
+      .navbar {
+        background-color: white;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar h1 {
+        color: #d61120;
+        font-size: 32px;
+      }
+
+      .nav-links ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+      }
+
+      .nav-links li {
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 500px;
+        color: white;
+        padding: 0 60px;
+        position: relative;
+      }
+
+      .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      .hero-content {
+        position: relative;
+        max-width: 500px;
+      }
+
+      .hero-content h2 {
+        font-size: 40px;
+        font-weight: 700;
+      }
+
+      .hero-content p {
+        margin: 15px 0;
+        font-size: 18px;
+      }
+
+      .hero-content .price {
+        font-size: 28px;
+        color: #ff1e1e;
+        font-weight: bold;
+      }
+
+      .hero-content button {
+        margin-top: 10px;
+        padding: 12px 25px;
+        background-color: #d61120;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .service-area {
+        text-align: center;
+        padding: 60px 20px;
+      }
+
+      .service-area h4 {
+        color: #d61120;
+        margin-bottom: 10px;
+      }
+
+      .service-area h2 {
+        margin-bottom: 40px;
+      }
+
+      .cards {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        background: #f7f7f7;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        width: 200px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      }
+
+      .card.active {
+        background-color: #d61120;
+        color: white;
+      }
+
+      .card h3 {
+        margin: 10px 0;
+      }
+
+      .card p {
+        font-size: 14px;
+      }
