@@ -1,60 +1,113 @@
 body{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #333;
       }
 
-      body {
-        background-color: #fff;
-        color: #333;
-      }
+.header-top {
+  background-color: #d61120;
+  color: white;
+  padding: 5px 20px;
+  font-size: 14px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
 
-      .header-top {
-        background-color: #d61120;
-        color: white;
-        padding: 5px 20px;
-        text-align: right;
-        font-size: 14px;
-      }
+.left, .right{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.icon {
+  width: 16px;
+  height: 16px;
+}
 
-      .navbar {
-        background-color: white;
-        padding: 15px 40px;
+
+.navigation-bar {
+  background-color: white;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-bar h1 {
+  color: #d61120;
+  font-size: 24px;
+  margin: 0;
+}
+
+.navigation-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navigation-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin-right: 16px;
+}
+
+.navigation-links li {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  vertical-align: middle;
+  position: relative;
+  bottom: 10px;
+}
+.navigation-links img{
+  position: relative;
+  top: 9px;
+  margin-left: -8px;
+  width: 26px;
+  height: 26x;
+}
+
+.dropdown-icon{
+  font-size: 15px;
+  margin-left: 4px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.icons {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  margin-left: 5px;
+  margin-right: 20px;
+  /* padding-right: 10px; */
+}
+
+.main {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
-
-      .navbar h1 {
-        color: #d61120;
-        font-size: 32px;
-      }
-
-      .nav-links ul {
-        list-style: none;
-        display: flex;
-        gap: 30px;
-      }
-
-      .nav-links li {
-        font-size: 16px;
-        font-weight: 500;
-        cursor: pointer;
-      }
-
-      .hero {
-        display: flex;
-        align-items: center;
         justify-content: space-between;
-        height: 500px;
+        height: 750px;
         color: white;
         padding: 0 60px;
         position: relative;
+        background-image: url(../img/groupie.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
       }
 
-      .hero::before {
+.main::before {
         content: '';
         position: absolute;
         top: 0;
@@ -64,28 +117,28 @@ body{
         background: rgba(0, 0, 0, 0.5);
       }
 
-      .hero-content {
+.main-content {
         position: relative;
         max-width: 500px;
       }
 
-      .hero-content h2 {
+.main-content h2 {
         font-size: 40px;
         font-weight: 700;
       }
 
-      .hero-content p {
+.main-content p {
         margin: 15px 0;
         font-size: 18px;
       }
 
-      .hero-content .price {
+.main-content .price {
         font-size: 28px;
         color: #ff1e1e;
         font-weight: bold;
       }
 
-      .hero-content button {
+.main-content button {
         margin-top: 10px;
         padding: 12px 25px;
         background-color: #d61120;
@@ -96,45 +149,82 @@ body{
         cursor: pointer;
       }
 
-      .service-area {
+.service-area {
         text-align: center;
         padding: 60px 20px;
       }
 
-      .service-area h4 {
+.service-area h4 {
         color: #d61120;
         margin-bottom: 10px;
       }
 
-      .service-area h2 {
+.service-area h2 {
         margin-bottom: 40px;
       }
 
-      .cards {
+.cards {
         display: flex;
         justify-content: center;
         gap: 20px;
         flex-wrap: wrap;
       }
 
-      .card {
+.card {
         background: #f7f7f7;
         padding: 30px;
         border-radius: 10px;
         text-align: center;
         width: 200px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        box-shadow: 0 0 10px rgba(0,0,0.5);
       }
 
-      .card.active {
+.card.active {
         background-color: #d61120;
         color: white;
       }
 
-      .card h3 {
+.card.active > .pic{
+  position: relative;
+  top: 17px;
+  width: 100px;
+  height: 80px;
+}
+
+.card > .pic{
+  position: relative;
+  top: 17px;
+  width: 100px;
+  height: 80px;
+}
+
+.card > h3{
+  position: relative;
+  display: inline;
+  vertical-align: left;
+  top: 30px;
+  right: 45px;
+  width: 100px;
+  height: 80px;
+}
+.card > p{
+  position: relative;
+  top: 30px;
+  width: 500px; 
+  height: 80px;
+  text-align: justify;
+}
+
+
+
+.card h3 {
         margin: 10px 0;
       }
 
-      .card p {
+.card p {
         font-size: 14px;
       }
+.pic{
+  display: block;
+  margin-left: 0;
+}
