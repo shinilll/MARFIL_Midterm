@@ -241,7 +241,6 @@ body{
 .image-box {
   position: relative;
   flex: 1;
-  overflow: hidden;
 }
 
 .image-box img {
@@ -249,18 +248,24 @@ body{
   position: relative;
   /* border: 4px solid #d61120; */
   border-radius: 20px 0 0 20px;
-  overflow: hidden;
   background-repeat: no-repeat;
   width: 500px;
-  margin-left: 145px;
+  height: auto;
+  margin-left: 330px;
 }
 
-.image-box .tv-bottom {
+/* .image-box .tv-bottom {
  position: absolute;
   bottom: -30px;
   right: -40px;
   width: 280px;
   z-index: 4;
+} */
+
+.tv-bottom{
+  position: relative;
+  top: 30em; right: 12em;
+  width: 200px;
 }
 
 .red-frame {
@@ -273,15 +278,15 @@ body{
 
 
 .experience-badge {
-  position: absolute;
-  top: -20px;
-  left: -20px;
+  position: relative;
+  bottom: 36em;
+  left: 17em;
   background: #d61120;
   color: white;
   padding: 20px 16px;
   border-radius: 10px;
-  width: 150px;
-  z-index: 3;
+  width: 250px;
+  height: 180px;
   font-family: 'Montserrat', sans-serif;
   text-align: left;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -427,4 +432,3 @@ body{
   object-fit: cover;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 } */
-
